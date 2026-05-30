@@ -1,7 +1,6 @@
 """
 Pi-Nexus Autonomous Banking Network
 blockchain.py - New Version Blockchain Module
-Branch: Tsukimarf-patch-1
 
 Features:
 - Full Proof-of-Work (PoW) & Proof-of-Stake (PoS) hybrid consensus
