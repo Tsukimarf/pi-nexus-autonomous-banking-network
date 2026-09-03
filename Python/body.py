@@ -365,7 +365,7 @@ class DatabaseManager:
                 try:
                     cursor.execute(stmt)
                 except Exception as e:
-                    logger.warning(f"Schema statement skipped: {e}")
+                    raise
         logger.info(f"Database schema initialized ({self.cfg.DB_TYPE})")
 
     # ── Query Helpers ─────────────────────────────────────────────────────
