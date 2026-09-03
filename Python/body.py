@@ -468,7 +468,7 @@ class Security:
     @staticmethod
     def encrypt(value: str) -> str:
         if not HAS_CRYPTO or not config.FERNET_KEY:
-            return value
+            raise RuntimeError("cryptography and FERNET_KEY are required for encryption")
         f = Fernet(config.FERNET_KEY)
         return f.encrypt(value.encode()).decode()
 
